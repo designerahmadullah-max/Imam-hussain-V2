@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "DM Serif Display:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/DMSerifDisplay-Regular_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter:Semi Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope:SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope:Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+}
+
+@font-face {
+  font-family: "Merriweather:Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Merriweather-Italic_opsz_wdth_wght__1") format("woff2");
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.scroll-track {
+  animation: scrollLeft 40s linear infinite;
+}
+
+.scroll-track:hover,
+.scroll-container:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-track {
+    animation: none;
+  }
+}
